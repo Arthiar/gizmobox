@@ -1,0 +1,3 @@
+# Ignore notebooks that contain environment-specific credential examples
+/dea_02_etl_with_spark_to_bronze/06_Extract_refunds_data_ext_table_jdbc.ipynb
+/dea_01_unity_catalog/01_project_configure_access _to_cloud_storage.ipynb
