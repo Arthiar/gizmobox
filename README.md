@@ -13,7 +13,10 @@ It starts with raw data in the landing area, moves it to bronze tables and views
 
 ## Main folders
 
-* `dea_01_unity_catalog` - sets up catalog, schemas, volumes, and storage access
+* `dea_01_unity_catalog` - sets up the Unity Catalog foundation for the project
+  * `01_project_configure_access_to_cloud_storage` - connects to Azure storage, creates the gizmobox catalog with landing/bronze/silver/gold schemas, and sets up volumes
+  * `02_spark_UDF` - makes reusable SQL functions for things like formatting names and decoding payment status codes
+  * `03_higher_order_function` - shows how to work with arrays and nested data using SQL functions like TRANSFORM and AGGREGATE
 * `dea_02_etl_with_spark_to_bronze` - loads raw source data into bronze views and tables
 * `dea_03_etl_with_spark_to_silver` - cleans and transforms bronze data into silver tables
 * `dea_03_etl_with_spark_to_gold` - joins silver data into final gold tables
